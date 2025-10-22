@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Simple Portfolio</title>
+  <link rel="stylesheet" href="iftikhat.css">
+</head>
+<body>
+  <div class="container">
+        <header class="site-header">
+      <div class="brand">Iftikhar Ali;<br>portfolio</div>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="about.html">About</a>
+        <a href="portfolio.html">Work</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+    <section class="hero" id="home">
+      <div class="hero-text">
+        <h1>Assalamu Alaikum — I'm Iftikhar Ali</h1>
+        <p>My name is Iftikhar Ali and I am a PT teacher at a school.
+            I teach students about physical fitness and outdoor games.
+            I always encourage my students to stay active and disciplined.
+            I love my profession and enjoy helping students become strong and healthy.</p>
+    <section class="contact" id="contact">
+      <h2>Contact Me</h2>
+      <form onsubmit="event.preventDefault(); alert('Form submit simulated — replace with backend or mailto.');">
+        <div class="field">
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Your name" required>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="you@example.com" required>
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" placeholder="Write your message..." required></textarea>
+        </div>
+        <div>
+          <button class="btn" type="submit">Send Message</button>
+        </div>
+      </form>
+    </section>
+
+    <footer class="site-footer">
+      © <span id="year"></span> Muhammad — Built with HTML & CSS
+    </footer>
+  </div>
+
+  <script>
+    // small script: current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
